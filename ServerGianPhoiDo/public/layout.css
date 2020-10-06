@@ -1,0 +1,549 @@
+/*.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*------------------------------*/
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+*/
+/*------------------------------*/
+
+.toggle-button-demo {
+  text-align: center;
+}
+h4 {
+  font-size: 20px;
+  color: #333;
+}
+.toggle-ios {
+  display: none;
+}
+.toggle-ios + .toggle-btn {
+  content: "ON";
+  outline: 0;
+  display: block;
+  width: 4em;
+  margin: 0 auto;
+  height: 2em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: #fbfbfb;
+  border-radius: 2em;
+  padding: 2px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border: 1px solid #e8eae9;
+}
+.toggle-ios + .toggle-btn:after {
+  content: "OFF";
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 0;
+  border-radius: 2em;
+  background: #fbfbfb;
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+/*.toggle-ios:checked + .toggle-btn1 {
+  background: #FFFF000D;
+}
+.toggle-ios:checked + .toggle-btn2 {
+  background: #86d993;
+}*/
+.toggle-ios:checked + .toggle-btn {
+  background: #f4ee42;
+}
+.toggle-ios:checked + .toggle-btn:after {
+  left: 50%;
+}
+
+/*--------------chat----------------*/
+
+body{background-color: #d7dfed}
+h1{text-align: center;}
+#chat{width: 600px; margin: auto;}
+#left, #right{min-height: 500px; float: left; margin-top: 10px}
+#left{width: 30%; background-color: #eaf4b7}
+#right{width: 70%; background-color: #d6f9d9}
+.block{width: 100%; clear: both}
+
+#txtMessage, #btnSandChat{float: left;margin: 3px}
+#txtMessage{width: 70%}
+#btnSendChat{width: 25%}
+#title{background-color: #ccf900; text-align: center; padding: 5px}
+.hoten{font-weight: bold; color: red}
+#dsMsg{height: 450px; overflow: scroll;}
+
+#tenUserdaDK { font-size: 26px; font-weight: 300; color: #16a509; margin: 0 0 24px; }
+
+/*Demo dãy checkbox*/
+#change_table tr td div{
+  width:200px; 
+  height:100px;
+  background-color:#EAEAEA;
+  border:1px solid black;
+}
+
+
+/*@import "compass/css3";*/
+
+/* $activeColor: #c0392b; //red */
+/*$activeColor: #27ae60; //green
+$darkenColor: darken($activeColor, 20%);*/
+/* $background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13460/dark_wall.png'); */
+/*$background: #3498db;*/
+/* .slideThree */
+.slideThree {
+  width: 80px;
+  height: 26px;
+  background: #333;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+  &:after {
+    content: 'OFF';
+    color: #000;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+  }
+  &:before {
+    content: 'ON';
+    color: $activeColor;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+  }
+  label {
+    display: block;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label {
+      left: 43px;
+    }
+  }    
+}
+/* end .slideThree */
+
+
+/*switch kkk*/
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/*------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 100%;
+}
+body {
+    font-family: inherit;
+    font-size: 1em;
+    margin: 2em;
+    background-color: #e9e9e9;
+}
+/**
+ * The switch widget!
+ * Usage:
+ *   <input type="checkbox" switch[="type"] id="toggleSwitch" />
+ *   <label for="toggleSwitch" data-on-label="On" data-off-label="Off"></label>
+ */
+
+input[switch] {
+    display: none;
+}
+input[switch] + label {
+    font-size: 1em;
+    line-height: 1;
+    width: 4rem;
+    height: 2rem;
+    background-color: #ddd;
+    background-image: none;
+    border-radius: 2rem;
+    padding: 0.16667rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
+    font-family: inherit;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+input[switch] + label:before {
+    /* Label */
+    
+    text-transform: uppercase;
+    color: #b7b7b7;
+    content: attr(data-off-label);
+    display: block;
+    font-family: inherit;
+    font-family: FontAwesome, inherit;
+    font-weight: 500;
+    font-size: 0.7rem;
+    line-height: 1.74rem;
+    position: absolute;
+    right: 0.21667rem;
+    margin: 0.21667rem;
+    top: 0;
+    text-align: center;
+    min-width: 1.66667rem;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+input[switch] + label:after {
+    /* Slider */
+    
+    content: '';
+    position: absolute;
+    left: 0.16667rem;
+    background-color: #f7f7f7;
+    box-shadow: none;
+    border-radius: 2rem;
+    height: 1.66667rem;
+    width: 1.66667rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+input[switch]:checked + label {
+    background-color: lightblue;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.2));
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3) inset;
+}
+input[switch]:checked + label:before {
+    color: #fff;
+    content: attr(data-on-label);
+    right: auto;
+    left: 0.21667rem;
+}
+input[switch]:checked + label:after {
+    left: 2.16667rem;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+input[switch="bool"] + label {
+    background-color: #ee6562;
+}
+input[switch="bool"] + label:before {
+    color: #fff !important;
+}
+input[switch="bool"]:checked + label {
+    background-color: #BCE954;
+}
+input[switch="bool"]:checked + label:before {
+    color: #fff !important;
+}
+input[switch="default"]:checked + label {
+    background-color: #a2a2a2;
+}
+input[switch="default"]:checked + label:before {
+    color: #fff !important;
+}
+input[switch="success"]:checked + label {
+    background-color: #BCE954;
+}
+input[switch="success"]:checked + label:before {
+    color: #fff !important;
+}
+input[switch="warning"]:checked + label {
+    background-color: gold;
+}
+input[switch="warning"]:checked + label:before {
+    color: #fff !important;
+}
+input[switch="red"]:checked + label {
+    background-color: #ee6562;
+}
+input[switch="red"]:checked + label:before {
+    color: #fff !important;
+}
+
+/*khối điều khiển*/
+#dieukhien{text-align: center;}
+table{
+    width:100%;
+}
+table,th,td{
+    border:1px solid gray;
+    border-collapse: collapse;
+}
+th,td{
+    padding:7px 15px;
+    font-family: Copperplate,"Copperplate Gothic Light",fantasy
+}
+th{
+    background-color: #008040;
+    color: white;
+    padding: 10px;
+    color: #f79a04;
+    font-weight: 900;
+    font-family: Copperplate,"Copperplate Gothic Light",fantasy
+}
+tr:nth-child(even){
+    background-color: #F0F0F0;
+}
+tr:hover{
+    background-color: #ddd;
+}
+#titleControl{color: #3763dd}
+#mauDo{color: red}
+#mauXanh{color: green}
+#mauVang{color: #cebd02}
+
+/*button chat*/
+body
+{
+  padding: 20px;
+}
+
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+
+.green
+{
+  background-color: #82BF56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0px -2px #669644;
+}
+
+.yellow
+{
+  background-color: #F2CF66;
+  border-bottom: 5px solid #D1B358;
+  text-shadow: 0px -2px #D1B358;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}

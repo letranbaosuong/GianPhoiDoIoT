@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Giàn Phơi Đồ Internet</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_fingerprint">Quét vân tay để đăng nhập</string>
+    <string name="desc_fingerprint">Vui lòng đặt ngón tay của bạn trên máy quét để xác minh danh tính của bạn</string>
+    <string name="note">(Đăng nhập bằng vân tay giúp ứng dụng của bạn đăng nhập nhanh hơn nhiều. Thiết bị của bạn phải có ít nhất một dấu vân tay được đăng ký trong cài đặt thiết bị)</string>
+    <string name="title_activity_home">Vân tay</string>
+    <string name="activity_home_desc">Bạn đã đăng nhập thành công với xác thực dấu vân tay</string>
+    <string name="activity_home_note">Đóng và mở lại ứng dụng để xem lại màn hình xác thực dấu vân tay</string>
+</resources>

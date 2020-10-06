@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A29AAD"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".BieuDoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarBieuDo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6815DD"
+        app:title="DHT11 - Chart"
+        app:titleTextColor="#FFFFFF">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BieuDoActivity">
+
+        <TextView
+            android:id="@+id/txtNhietDo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Nhiệt độ"
+            android:textColor="#C70B0B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Date"
+            android:textColor="#C70B0B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNhietDo" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphNhietDo"
+            android:layout_width="313dp"
+            android:layout_height="291dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+        <TextView
+            android:id="@+id/txtDoAm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Độ ẩm"
+            android:textColor="#086081"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graphNhietDo" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeDoAm"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/graphNhietDo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            app:gaugeEndValue="800"
+            app:gaugePointEndColor="#3b50ce"
+            app:gaugePointStartColor="#91a7ff"
+            app:gaugeStartAngle="135"
+            app:gaugeStartValue="200"
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeColor="#bdbdbd"
+            app:gaugeStrokeWidth="10dp"
+            app:gaugeSweepAngle="270"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDoAm"
+            app:layout_constraintVertical_bias="0.254" />
+
+        <TextView
+            android:id="@+id/txtPhanTramDoAm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            android:textColor="#540483"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/gaugeDoAm"
+            app:layout_constraintEnd_toEndOf="@+id/gaugeDoAm"
+            app:layout_constraintStart_toStartOf="@+id/gaugeDoAm"
+            app:layout_constraintTop_toTopOf="@+id/gaugeDoAm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
